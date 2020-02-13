@@ -38,3 +38,17 @@ output.elasticsearch:
   password: "xxx"
 
 
+## Run this bad boy
+
+Setup the dashboards and index with :
+./filebeat setup
+
+Run it with:
+./filebeat run &
+
+How to debug:
+./filebeat -e
+
+Problems you may encouter:
+Any prior install of a filebeat index may cause some problems on your kibana dashboard,
+if it is the case i would recommend to delete all filebeat object installed on kibana and do ./filebeat setup   again.
