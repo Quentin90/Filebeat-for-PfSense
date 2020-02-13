@@ -1,0 +1,38 @@
+2020-02-13T09:27:58.046+0100	INFO	instance/beat.go:610	Home path: [/root/filebeat] Config path: [/root/filebeat] Data path: [/root/filebeat/data] Logs path: [/root/filebeat/logs]
+2020-02-13T09:27:58.046+0100	INFO	instance/beat.go:618	Beat ID: c21c867f-9b94-40a5-a784-e919018ccd5b
+2020-02-13T09:27:58.047+0100	INFO	[beat]	instance/beat.go:941	Beat info	{"system_info": {"beat": {"path": {"config": "/root/filebeat", "data": "/root/filebeat/data", "home": "/root/filebeat", "logs": "/root/filebeat/logs"}, "type": "filebeat", "uuid": "c21c867f-9b94-40a5-a784-e919018ccd5b"}}}
+2020-02-13T09:27:58.047+0100	INFO	[beat]	instance/beat.go:950	Build info	{"system_info": {"build": {"commit": "6d0d0ae079e5cb1d4f224801ac6df926dfb1594c", "libbeat": "7.5.0", "time": "2020-02-12T13:03:06.000Z", "version": "7.5.0"}}}
+2020-02-13T09:27:58.047+0100	INFO	[beat]	instance/beat.go:953	Go runtime info	{"system_info": {"go": {"os":"freebsd","arch":"amd64","max_procs":1,"version":"go1.13.5"}}}
+2020-02-13T09:27:58.047+0100	INFO	instance/beat.go:297	Setup Beat: filebeat; Version: 7.5.0
+2020-02-13T09:27:58.047+0100	INFO	[index-management]	idxmgmt/std.go:182	Set output.elasticsearch.index to 'filebeat-7.5.0' as ILM is enabled.
+2020-02-13T09:27:58.047+0100	INFO	elasticsearch/client.go:171	Elasticsearch url: http://172.16.68.120:1001
+2020-02-13T09:27:58.047+0100	INFO	[publisher]	pipeline/module.go:97	Beat name: ynovlyonFirewall.ynovlyon.fr
+2020-02-13T09:27:58.048+0100	INFO	elasticsearch/client.go:171	Elasticsearch url: http://172.16.68.120:1001
+2020-02-13T09:27:58.091+0100	INFO	elasticsearch/client.go:753	Attempting to connect to Elasticsearch version 7.5.2
+2020-02-13T09:27:58.226+0100	INFO	[index-management]	idxmgmt/std.go:256	Auto ILM enable success.
+2020-02-13T09:27:58.363+0100	INFO	[index-management]	idxmgmt/std.go:269	ILM policy successfully loaded.
+2020-02-13T09:27:58.363+0100	INFO	[index-management]	idxmgmt/std.go:408	Set setup.template.name to '{filebeat-7.5.0 {now/d}-000001}' as ILM is enabled.
+2020-02-13T09:27:58.363+0100	INFO	[index-management]	idxmgmt/std.go:413	Set setup.template.pattern to 'filebeat-7.5.0-*' as ILM is enabled.
+2020-02-13T09:27:58.363+0100	INFO	[index-management]	idxmgmt/std.go:447	Set settings.index.lifecycle.rollover_alias in template to {filebeat-7.5.0 {now/d}-000001} as ILM is enabled.
+2020-02-13T09:27:58.363+0100	INFO	[index-management]	idxmgmt/std.go:451	Set settings.index.lifecycle.name in template to {filebeat-7.5.0 {"policy":{"phases":{"hot":{"actions":{"rollover":{"max_age":"30d","max_size":"50gb"}}}}}}} as ILM is enabled.
+2020-02-13T09:27:58.386+0100	INFO	template/load.go:169	Existing template will be overwritten, as overwrite is enabled.
+2020-02-13T09:27:58.477+0100	INFO	template/load.go:109	Try loading template filebeat-7.5.0 to Elasticsearch
+2020-02-13T09:27:58.775+0100	INFO	template/load.go:101	template with name 'filebeat-7.5.0' loaded.
+2020-02-13T09:27:58.775+0100	INFO	[index-management]	idxmgmt/std.go:293	Loaded index template.
+2020-02-13T09:27:59.148+0100	INFO	[index-management]	idxmgmt/std.go:304	Write alias successfully generated.
+2020-02-13T09:27:59.148+0100	INFO	kibana/client.go:117	Kibana url: http://172.16.68.120:1002
+2020-02-13T09:27:59.407+0100	INFO	kibana/client.go:117	Kibana url: http://172.16.68.120:1002
+2020-02-13T09:28:01.085+0100	INFO	add_cloud_metadata/add_cloud_metadata.go:89	add_cloud_metadata: hosting provider type not detected.
+2020-02-13T09:29:03.025+0100	INFO	instance/beat.go:780	Kibana dashboards successfully loaded.
+2020-02-13T09:29:03.026+0100	INFO	elasticsearch/client.go:171	Elasticsearch url: http://172.16.68.120:1001
+2020-02-13T09:29:03.069+0100	INFO	elasticsearch/client.go:753	Attempting to connect to Elasticsearch version 7.5.2
+2020-02-13T09:29:03.069+0100	INFO	kibana/client.go:117	Kibana url: http://172.16.68.120:1002
+2020-02-13T09:29:03.273+0100	WARN	fileset/modules.go:419	X-Pack Machine Learning is not enabled
+2020-02-13T09:29:03.385+0100	WARN	fileset/modules.go:419	X-Pack Machine Learning is not enabled
+2020-02-13T09:29:03.385+0100	INFO	elasticsearch/client.go:171	Elasticsearch url: http://172.16.68.120:1001
+2020-02-13T09:29:03.428+0100	INFO	elasticsearch/client.go:753	Attempting to connect to Elasticsearch version 7.5.2
+2020-02-13T09:29:03.429+0100	INFO	elasticsearch/client.go:171	Elasticsearch url: http://172.16.68.120:1001
+2020-02-13T09:29:03.472+0100	INFO	elasticsearch/client.go:753	Attempting to connect to Elasticsearch version 7.5.2
+2020-02-13T09:29:03.552+0100	INFO	fileset/pipelines.go:134	Elasticsearch pipeline with ID 'filebeat-7.5.0-suricata-eve-pipeline' loaded
+2020-02-13T09:29:03.552+0100	INFO	cfgfile/reload.go:264	Loading of config files completed.
+2020-02-13T09:29:03.552+0100	INFO	[load]	cfgfile/list.go:118	Stopping 1 runners ...
